@@ -12,9 +12,9 @@ The lane will be represented by an enum LaneAssociationType with the following p
 */
 #include <stdio.h>
 
-enum LaneAssociationType
-{
-    LaneAssociationType_UNKNOWN_LANE,
+enum LaneAssociationType                //As the car can be on one line at the time, we created an enum instead
+{                                       //to check with 'if-elseif' statements the condion all the time.
+    LaneAssociationType_UNKNOWN_LANE,   //It is good practice to put the enum name infront of the enum variable.
     LaneAssociationType_RIGHT_LANE,
     LaneAssociationType_CENTER_LANE,
     LaneAssociationType_LEFT_LANE
@@ -32,16 +32,16 @@ int main()
     printf("Lane (1=Right, 2=Center, 3=Left): ");
     scanf("%u", &selection);
 
-    printf("\n\t L   C   R  \n");
+    printf("\n\t L   C   R  \n");           //This is the main output of our highway.
 
     curren_lane = (enum LaneAssociationType)selection;
     switch (curren_lane)
     {
         case LaneAssociationType_LEFT_LANE:
         {
-            printf("\t\b| V |   |   |\n");
-            break;
-        }
+            printf("\t\b| V |   |   |\n");  //This is the output if the user chose the left lane of our highway.
+            break;                          //The 'V' stand for our vehicle and the stripes represent the left, right
+        }                                   //and center line.
         case LaneAssociationType_CENTER_LANE:
         {
             printf("\t\b|   | V |   |\n");
