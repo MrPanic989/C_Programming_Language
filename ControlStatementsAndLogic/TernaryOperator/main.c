@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     unsigned int age1 = 0u;
     unsigned int age2 = 0u;

@@ -8,7 +8,7 @@
 
 #define PI 3.14159      //One can use the M_PI from math.h but it is undefined in C/C++(20)
 
-int main()
+int main(void)
 {
     double radius = 0.0;        //0.0f would be the sign for float and just 0.0 represent the type double.
     double perimeter = 0.0;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main()
+int main(void)
 {
     bool has_money_on_the_bank = true;
     bool has_cash = false;

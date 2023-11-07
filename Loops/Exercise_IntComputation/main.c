@@ -9,7 +9,7 @@ Implement the following logic:
 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     unsigned int input = 0u;
     unsigned int num_digits = 0u;

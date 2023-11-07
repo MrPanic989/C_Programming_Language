@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main()
+int main(void)
 {               //unsigned int because ages cannot be negative
     unsigned int age_sarah = 0U;
     unsigned int age_jan = 0U;

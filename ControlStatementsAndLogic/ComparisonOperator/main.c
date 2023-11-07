@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>  //This library is needed if we want to use the bool operator.
 
-int main()
+int main(void)
 {
     int a = 0;
     int b = 0;

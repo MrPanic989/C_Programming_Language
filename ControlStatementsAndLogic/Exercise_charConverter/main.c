@@ -74,7 +74,7 @@ bool alpha(char value)              //This function checks if the character is a
     }
 }
 
-int main()
+int main(void)
 {
     char character;
 

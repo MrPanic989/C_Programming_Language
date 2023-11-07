@@ -20,7 +20,7 @@ enum LaneAssociationType                //As the car can be on one line at the t
     LaneAssociationType_LEFT_LANE
 };
 
-int main()
+int main(void)
 {
     float current_speed = 0.0f;
     enum LaneAssociationType curren_lane = LaneAssociationType_UNKNOWN_LANE;

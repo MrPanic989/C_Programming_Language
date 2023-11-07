@@ -36,7 +36,7 @@ float third_computation(float m, float n)
     return result;
 }
 
-int main()
+int main(void)
 {
     float x = 0.0F, y = 0.0F, z1 = 0.0F, z2 = 0.0F, z3 = 0.0F;
 

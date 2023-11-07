@@ -54,7 +54,7 @@ float calculate_days(float i)
     return result;
 }
 
-int main()
+int main(void)
 {
     float milliseconds = 0.0F;
     float seconds = 0.0F;

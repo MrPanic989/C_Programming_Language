@@ -36,7 +36,7 @@ int main()
 }
 */
 //Version 2: For more general purpose, this is the version one should implement.
-int main()
+int main(void)
 {
     int input = 0;
 
