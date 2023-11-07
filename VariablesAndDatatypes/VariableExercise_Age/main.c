@@ -56,7 +56,7 @@ unsigned long long int age_in_seconds(unsigned long long int i)
     return result;
 }
 
-int main()
+int main(void)
 {
     /*unsigned int age = 0U;    Range 0 to 4,294,967,295. This could be a problem (overflow) if we
                                 want to calculate some (most unlikely) ages in seconds, e.g. 140 years.

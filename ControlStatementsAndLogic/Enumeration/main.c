@@ -10,7 +10,7 @@ enum Beverage
     COFFEE,         // = 5
 };
 
-int main()
+int main(void)
 {
     enum Beverage selected_beverage = NO_BEVERAGE;  //Now we are initializing a variable 'selected_beverage' of the data type 'enum Beverage'
     int selection = 0;

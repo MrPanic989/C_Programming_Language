@@ -12,7 +12,7 @@ void reverse(int height, char character)    //void function means that we do not
     }
 }
 
-int main()
+int main(void)
 {
     char character = 'x';
     int height = 0;

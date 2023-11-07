@@ -17,7 +17,7 @@ int number_mod_three(int value)
     return check;                   //                if(check < 0){
 }                                   //                check = (mod < 0) ? check - mod : check + mod;
                                     //                }
-int main()                          //  	          return check; }
+int main(void)                          //  	          return check; }
 {
     int number = 0;
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     //Declaration + initialization
     int firstNumber = 0;          //If we exactly know that our values cannot be negative, than we should

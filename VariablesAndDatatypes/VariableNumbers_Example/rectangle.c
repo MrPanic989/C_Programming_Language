@@ -5,7 +5,7 @@
 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     float side_a = 0.0F;
     float side_b = 0.0F;

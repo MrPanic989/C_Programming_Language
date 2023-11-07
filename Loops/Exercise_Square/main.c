@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
+int main(void)
 {
     double length = 0.0;        //Data type 'double' just because the function pow() from the <math.h> library
     double perimeter = 0.0;     //uses 'double' as type.
