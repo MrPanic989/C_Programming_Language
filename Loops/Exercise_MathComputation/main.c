@@ -46,13 +46,13 @@ int main(void)
         value_per_loop = (1 / denominator1) - (1 / denominator2);
 
         pi_approximation = pi_approximation + value_per_loop;
-        printf("PI in this loop: %lf\n", pi_approximation);
+        printf("PI in this loop: %.15lf\n", pi_approximation);  //.15 because the data type double can represent 17 characters in total, that is leading number, the ., and 15 afuterwards.
     }
 
     pi_approximation = 4 * pi_approximation;
 
-    printf("The approximation of PI in this case is: %lf\n", pi_approximation);
-    printf("The correct value of PI is: %lf\n", pi);
+    printf("The approximation of PI in this case is: %.15lf\n", pi_approximation);
+    printf("The correct value of PI is: %.15lf\n\n", pi);
 
     //Decimal to binary
 
@@ -69,13 +69,14 @@ int main(void)
 
     printf("The decimal number %d has the following binary representation: ", decimal_number);
 
-    for(int i = 7; i >= 0; i--)
+    for(int i = 15; i >= 0; i--)        //with 0 to 15 spaces we cover the binary representation of 2 bytes
     {
         int binary_value = (int)pow(2, i);
-        /*printf("\nBinary value %d\t", binary_value);
-        int remainder = decimal_number % 2;
-        printf("Remainder %d\t", remainder);
-        printf("New decimal number %d\n", decimal_number);
+        /*Firstly in each iteration we have to calculate the first, or the outside left binary value: 2 to the power of 15 = 32768.
+          Is it greater than the decimal number, which is our input? Let's say, our input is 23466. So, is 23466 < 32768? Yes, so we print '0' out.
+          Next iteration: 2 to the power of 14 = 16384. Is it greater than our input 23466? No, that means 16384 is "included" in our input 23466.
+          We print out '1' and have to reduce the input by that value.
+          And so on until the condition for the loop is not given anymore.
         */
 
         if(decimal_number < binary_value)
@@ -87,28 +88,6 @@ int main(void)
             printf("1 ");
             decimal_number -= binary_value;
         }
-
-
-
-        /*
-        if(remainder == 0)
-        {
-            printf("1 ");
-        }
-        else
-        {
-            printf("0 ");
-        }
-
-        if(decimal_number == binary_value)
-        {
-            decimal_number = 0;
-        }
-        else
-        {
-            decimal_number /= 2;
-        }
-        */
     }
 
     printf("\n");
